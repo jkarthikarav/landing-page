@@ -226,7 +226,7 @@ section {
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.3)
     ),
-    url('/assets/Cory-Richards-Photographer-Antarctica-19.webp') bottom / cover no-repeat;
+    url('assets/Cory-Richards-Photographer-Antarctica-19.webp') bottom / cover no-repeat;
 }
 
 .image-card-section__credit {
