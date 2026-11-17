@@ -220,13 +220,7 @@ section {
   min-height: 30vh;
   overflow: hidden;
 
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url('assets/Cory-Richards-Photographer-Antarctica-19.webp') bottom / cover no-repeat;
+  
 }
 
 .image-card-section__credit {
