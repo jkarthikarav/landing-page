@@ -1,0 +1,365 @@
+section {
+  width: 100%;
+  padding: 4rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+.text-group {
+  width: 49%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
+  justify-content: center;
+  gap: 4%;
+}
+
+.centered-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  isolation: isolate;
+}
+
+.centered-section__content {
+  width: 49%;
+  background-color: #FFF2CC;
+  background-image:
+    linear-gradient(
+      225deg,
+      var(--brand-primary-white) 28px,
+      transparent 28px
+    ),
+    linear-gradient(
+      225deg,
+      rgb(42 70 38 / 12%) 28px,
+      transparent 28px
+    );
+  background-position: top right;
+  background-size: 28px 28px, 30px 30px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-direction: column;
+  padding: 1.6rem 1.2rem;
+  box-shadow: 0 12px 28px rgb(42 70 38 / 10%);
+  transform: rotate(-0.5deg);
+}
+
+.special-hero__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.special-hero__animation-toggle {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 2;
+}
+
+.special-hero__toggle-icon {
+  stroke: #fff !important;
+}
+
+.special-hero__actions {
+  justify-content: center;
+  margin-top: 36px;
+}
+
+@media (max-width: 968px) {
+    section {
+        padding-inline: 24px;
+    }
+    .text-group {
+        width: 100%;
+    }
+    .centered-section__content {
+      width: 100%;
+    }
+    .centered-section {
+      min-height: fit-content;
+      padding: 5rem 0rem;
+      gap: 8px;
+    }
+    .special-hero__animation-toggle {
+      position: absolute;
+      top: 0.25rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .centered-section__content {
+      width: 73%;
+    }
+    .flex-row {
+      width: 100%;
+    }
+}
+
+/* Button */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: var(--border-radius-subtle);
+  border: 2px solid transparent;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease;
+}
+
+.button-large {
+  font-size: var(--body-base);
+  line-height: var(--line-height-default);
+}
+
+.button-medium {
+  font-size: var(--body-small);
+  line-height: var(--line-height-default);
+}
+
+.button-filled-J {
+  background-color: var(--J-dark);
+  color: var(--brand-primary-white);
+}
+.button-filled-A {
+  background-color: var(--A-dark);
+  color: var(--brand-primary-white);
+}
+.button-filled-K {
+  background-color: var(--K-dark);
+  color: var(--brand-primary-white);
+}
+
+.button-filled-tonal-J {
+  background-color: var(--J-light);
+  color: var(--brand-primary-black);
+}
+.button-filled-tonal-A {
+  background-color: var(--A-light);
+  color: var(--brand-primary-black);
+}
+.button-filled-tonal-K {
+  background-color: var(--K-light);
+  color: var(--brand-primary-black);
+}
+
+.button-filled-J:hover,
+.button-filled-A:hover,
+.button-filled-K:hover {
+  border-color: var(--brand-primary-white);
+  background-color: var(--brand-primary-black);
+}
+
+.button-filled-tonal-J:hover,
+.button-filled-tonal-A:hover,
+.button-filled-tonal-K:hover {
+  border-color: var(--brand-primary-black-light);
+  background-color: var(--brand-primary-white);
+}
+
+.button-elevated {
+  background-color: var(--brand-primary-white);
+  color: var(--brand-primary-black);
+  border-color: var(--brand-primary-white-dark);
+  box-shadow: 0 2px 4px rgba(6, 14, 6, 0.15);
+}
+
+.button-elevated:hover {
+  background-color: var(--brand-primary-white-dark);
+}
+
+.button-outlined {
+  background-color: transparent;
+  color: var(--brand-primary-black);
+  border-color: var(--brand-primary-black-light);
+}
+
+.button-outlined:hover {
+  border-color: var(--brand-primary-black);
+  background-color: var(--brand-primary-white-dark);
+}
+
+.button-text {
+  background-color: transparent;
+  color: var(--brand-primary-black);
+  border-color: transparent;
+}
+
+.button-text:hover {
+  background-color: var(--brand-primary-white-dark);
+}
+
+.button-fit-content {
+  width: fit-content;
+}
+
+.image-card-section {
+  position: relative;
+  min-height: 30vh;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('/assets/Cory-Richards-Photographer-Antarctica-19.webp') bottom / cover no-repeat;
+}
+
+.image-card-section__credit {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.image-card-section__credit-button {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: var(--border-radius-circle);
+  background-color: var(--brand-primary-black);
+  color: var(--brand-primary-white);
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  cursor: pointer;
+}
+
+.image-card-section__tooltip {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: max-content;
+  max-width: 240px;
+  padding: 10px 14px;
+  border-radius: var(--border-radius-subtle);
+  background-color: var(--brand-primary-white);
+  color: var(--brand-primary-black);
+  font-family: var(--font-primary);
+  font-size: var(--body-small);
+  line-height: var(--line-height-body);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 180ms ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.image-card-section__credit:hover .image-card-section__tooltip,
+.image-card-section__credit:focus-within .image-card-section__tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Grid row */
+.card-grid {
+  display: flex;
+  width: 100%;
+  gap: 2%;
+  margin: 2rem auto;
+}
+
+/* Image card */
+.image-card {
+  width: 69%;
+  min-height: 50vh;
+  border-radius: var(--border-radius-subtle);
+  overflow: hidden;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text card */
+.text-card {
+  width: 29%;
+  background-color: var(--brand-primary-white);
+  border-radius: var(--border-radius-subtle);
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.text-card-top {
+  justify-content: flex-start;
+}
+
+.image-card-feature {
+  width: 23.5%;
+  min-height: 30vh;
+  border-radius: var(--border-radius-subtle);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.image-card-feature__content {
+  padding: 16px;
+}
+
+.image-card-feature-full {
+  width: 100%;
+  min-height: 60vh;
+  border-radius: var(--border-radius-subtle);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.image-card-feature-full__content {
+  padding: 24px;
+}
+
+/* Mobile */
+@media (max-width: 968px) {
+  .card-grid {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .image-card {
+    width: 100%;
+    min-height: fit-content;
+  }
+
+  .text-card {
+    width: 100%;
+  }
+  .image-card-feature {
+    width: 100%;
+    max-height: none;
+  }
+}

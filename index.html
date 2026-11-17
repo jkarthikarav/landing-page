@@ -1,0 +1,298 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Karthik's Portfolio</title>
+<link rel="stylesheet" href="/includes/styles.css" />
+<link rel="stylesheet" href="/includes/components.css" />
+<script src="/includes/home.js" defer></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Lexend:wght@400;600;800&family=Modern+Antiqua&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <section class="section centered-section bg-brand-primary-white" id="hero">
+      <canvas class="special-hero__canvas" id="hero-ripple-canvas" aria-hidden="true"></canvas>
+
+      <button class="button button-filled-J special-hero__animation-toggle button-fit-content" id="hero-animation-toggle"
+         type="button" aria-label="Pause animation">
+         <svg class="special-hero__toggle-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="white"
+            stroke-width="2" stroke-linecap="round">
+            <path d="M8 5v14M16 5v14" />
+         </svg>
+         <span class="special-hero__toggle-label">Pause</span>
+      </button>
+
+      <div class="centered-section__content">
+         <p class="label-body-base-regular font-color-brand-primary-black" style="text-transform: uppercase;">
+            <span id="greeting"></span>
+         </p>
+         <span class="display-heading-small-thick font-color-primary-black">
+            I <span class="underline-K-dark">research</span>, <span class="underline-A-dark">design</span>, 
+            and <span class="underline-J-dark">build</span> 
+            <span class="underline-J-light">websites</span>,
+            <span class="underline-A-light">products</span>
+            and <span class="underline-K-light">workflows</span>.
+         </span>
+         <button class="button button-medium button-fit-content button-elevated" onclick="document.getElementById('select-work').scrollIntoView({ behavior: 'smooth' });">
+            Explore Work
+         </button>
+      </div>
+   </section>
+
+   <section class="bg-brand-primary" id="select-work">
+      <div class="text-group">
+         <h2 class="display-heading-medium-thick font-color-brand-primary-black">
+            Select Work
+         </h2>
+
+         <div class="text-group__description">
+            <p class="primary-body-base-thick font-color-brand-primary-black">
+               My speciality lies in building Digital Experiences that make finding products/services easier for your users and making these complex product marketing systems simpler to maintain.
+            </p>
+            <p class="primary-body-base-regular font-color-brand-primary-black">
+               Currently, I have 7+ years of experience in UX/UI and Content Design, working with Nonprofits, Healthcare networks, Educational Institutions, and Marketing Agencies.
+            </p>
+         </div>
+      </div>
+      <div class="card-grid">
+         <div class="image-card">
+            <img src="/assets/TNFC.webp" alt="Image description">
+         </div>
+
+         <div class="text-card">
+            <p class="primary-body-small-thin">
+               2024-25
+            </p>
+
+            <h3 class="display-heading-smaller-thick">
+               Making a Research Facility Easier to Discover and Access
+            </h3>
+
+            <p class="primary-body-base-thin">
+               I integrated Toronto Nanofabrication Centre (TNFC) into ECE at U of T’s public-facing website, aligning its branding, navigation, and content with the department’s ecosystem.
+            </p>
+
+            <button onclick="window.open('https://copywritingcreatives.substack.com/p/case-study-behind-the-scenes-of-a','_blank');" 
+               class="button button-filled-J button-fit-content">
+               Learn more
+            </button>
+         </div>
+      </div>
+      <div class="card-grid">
+         <div class="image-card image-card-feature" 
+            style="background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.7)), url('/assets/TNFC.webp') center / cover no-repeat;">
+            <div class="image-card-feature__content">
+               <h5 class="display-heading-smaller-thick font-color-brand-primary-white">
+                 Key Outcomes
+               </h5>
+               <p class="primary-body-base-thick font-color-brand-primary-white">
+                  Making an isolated website into a part of a digital ecosystem.
+               </p>
+            </div>
+         </div>
+         <div class="text-card text-card-top">
+            <p class="primary-body-base-thin">
+               Surfaced TNFC’s facilities on the and consolidated information, making them easier to identify and navigate.
+            </p>
+            <h5 class="display-heading-smaller-regular">
+               Improved Information Discovery & Simplified User Access
+            </h5>
+         </div>
+         <div class="text-card text-card-top">
+            <h5 class="display-heading-smaller-regular">
+               The Ask
+            </h5>
+            <p class="primary-body-base-thin">
+               "We would love to move the site to ece.utoronto.ca, update its look and feel,
+               and to include relevant industry information."
+            </p>
+         </div>
+         <div class="text-card text-card-top">
+            <p class="primary-body-base-thin">
+               Created reusable interface patterns, extending beyond TNFC to other properties.
+            </p>
+            <h5 class="display-heading-smaller-regular">
+               Consistent and Scalable UI Patterns & Components
+            </h5>
+         </div>
+      </div>
+
+      <div class="image-card-feature-full" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), 
+      url('/assets/ssyo-banner-main.webp') top / cover no-repeat;">
+         <div class="image-card-feature-full__content">
+            <p class="primary-body-small-thin font-color-brand-primary-white">
+               2026
+            </p>
+            <h5 class="display-heading-smaller-thick font-color-brand-primary-white">
+               Simplifying tech to amplify a charity's online footprint
+            </h5>
+
+            <p class="primary-body-base-regular font-color-brand-primary-white">
+               As the Lead Designer at Copywriting Creatives, I revamped South Shore Youth Organization's (SSYO) digital experience to streamline their donations, programs, and events, across all programs.
+            </p>
+
+            <button onclick="window.open('https://copywritingcreatives.substack.com/p/case-study-behind-the-scenes-of-a','_blank');" 
+               class="button button-elevated button-fit-content button-large">
+               Learn more
+            </button>
+         </div>
+      </div>
+   </section> 
+
+   <section class="bg-K-dark">
+      <div class="text-group">
+         <h2 class="display-heading-medium-thick font-color-brand-primary-white">
+            The Sandcastle: Karthik's Digital Experiments
+         </h2>
+
+         <div class="text-group__description">
+            <p class="primary-body-base-thick font-color-brand-primary-white">
+               Web-based public and private products/tools I designed and developed myself, each built around a specific purpose and from my system.
+            </p>
+            <p class="primary-body-base-regular font-color-brand-primary-white">
+               I use different AI tools in my pre-production workflow and to 
+               automate repetitive tasks such as running tests on my specs and organizing ideas.
+               As a Designer-Builder, I redesign, test, and deploy every one of my products. 
+            </p>
+            <p class="primary-body-base-regular font-color-brand-primary-white">
+               These serve as a sneak peek into how I function as researcher, designer, developer, and product manager in one.
+            </p>
+            <button onclick="window.open('https://copywritingcreatives.substack.com/p/case-study-behind-the-scenes-of-a','_blank');" 
+               class="button button-large button-filled-tonal-K button-fit-content">
+               Explore Experiments
+            </button>
+         </div>
+      </div>
+   </section>
+
+   <section class="bg-A-dark">
+      <div class="text-group">
+         <h2 class="display-heading-medium-thick font-color-brand-primary-white">
+            Making ECE at U of T’s Digital Experience Easier to Navigate
+         </h2>
+
+         <div class="text-group__description">
+            <p class="primary-body-base-thick font-color-brand-primary-white">
+               Between June 2024 and March 2025, I worked with the University of Toronto’s Department of Electrical and Computer Engineering (ECE).
+            </p>
+            <p class="primary-body-base-regular font-color-brand-primary-white">
+               I was initially managing website production requests per month before expanding into UX research, design, and front-end development across its web properties.
+            </p>
+            <p class="primary-body-base-regular font-color-brand-primary-white">
+               Starting in November 2024, I worked on improving how prospective students, researchers, faculty, and industry partners discovered and explored information across ECE’s web properties.
+            </p>
+            <button onclick="window.open('https://copywritingcreatives.substack.com/p/case-study-behind-the-scenes-of-a','_blank');" 
+               class="button button-large button-filled-tonal-A button-fit-content">
+               Explore Work Experience Highlights
+            </button>
+         </div>
+      </div>
+   </section> 
+
+   <section class="bg-J-dark">
+      <div class="text-group">
+         <h2 class="display-heading-medium-thick font-color-brand-primary-white">
+            Academic Projects at University of Toronto's Faculty of Information
+         </h2>
+
+         <div class="text-group__description">
+            <p class="primary-body-base-thick font-color-brand-primary-white">
+               Between 2023–25, I was enrolled at the Faculty pursuing a graduate degree in Information Sciences. 
+            </p>
+            <p class="primary-body-base-regular font-color-brand-primary-white">
+               These projects span my graduate studies, covering everything from UX research and service design to UI design, data science, and focused UX deliverables.
+            </p>
+         </div>
+      </div>
+
+         <div class="card-grid">
+            <div class="text-card text-card-top" onclick="window.open('https://karthikjambunathan.com/assets/pdf/Note4U.pdf', '_blank');"
+                style="cursor: pointer; text-decoration: none;">
+               <p class="primary-body-small-thin">
+                  Fall 2024 · Product Design
+               </p>
+               <h5 class="display-heading-smaller-regular">
+                  Assessing Product Risks
+                  & Adoption for an AI-Powered Music Transcription Tool
+               </h5>
+               <button class="button button-medium button-fit-content">
+                  Explore Project
+               </button>
+            </div>
+            <div class="text-card text-card-top" onclick="window.open('https://github.com/jkarthikarav/hcds-INF1340H', '_blank');"
+                style="cursor: pointer; text-decoration: none;">
+               <p class="primary-body-small-thin">
+                 Jul - Aug 2024 · Data Science 
+               </p>
+               <h5 class="display-heading-smaller-regular">
+                  The Effect of Collaboration on Chart Rank in the Billboard Music Top 100.
+               </h5>
+               <button class="button button-medium button-fit-content">
+                  Explore Project
+               </button>
+            </div>
+            <div class="text-card text-card-top" onclick="window.open('https://karthikjambunathan.com/work/tmc.html', '_blank');"
+               style="cursor: pointer; text-decoration: none;">
+               <p class="primary-body-small-thin">
+                  Fall 2023 · UX Research
+               </p>
+               <h5 class="display-heading-smaller-regular">
+                  Improving Textile Museum of Canada's 
+                  Content Discovery Through UX Research
+               </h5>
+               <button class="button button-medium button-fit-content">
+                  Explore Project
+               </button>
+            </div>
+         </div>
+   </section> 
+
+
+   <section class="section image-card-section centered-section">
+      <div class="image-card-section__credit">
+         <button
+            class="image-card-section__credit-button"
+            type="button"
+            aria-label="Image credits"
+            aria-describedby="image-credit"
+         >
+            i
+         </button>
+
+         <span class="image-card-section__tooltip" id="image-credit" role="tooltip" style="text-align: left;">             
+            A climber traverses rocky terrain in Antarctica.
+            <br>
+            Cory Richards
+         </span>
+      </div>
+
+      <div class="centered-section__content" style="background-color: transparent; background-image: none; box-shadow: none;">
+         <span class="display-heading-smaller-thick font-color-brand-primary-white">
+            I'm in the people business, so get in touch!
+         </span>
+         <div class="flex-row">
+            <a href="mailto:karthikaravindj@gmail.com"
+               class="button button-medium button-filled-K button-fit-content">
+               Email Me
+            </a>
+            <button onclick="window.open('https://www.linkedin.com/in/karthikjambunathan/','_blank');" 
+               class="button button-medium button-filled-A button-fit-content">
+               LinkedIn
+            </button>
+            <button onclick="window.open('https://copywritingcreatives.substack.com/p/case-study-behind-the-scenes-of-a','_blank');" 
+               class="button button-medium button-filled-J button-fit-content">
+               About Me
+            </button>
+         </div>
+            
+      </div>
+   </section>
+
+</body>
+</html>
+
+
